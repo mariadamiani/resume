@@ -17,6 +17,10 @@ body {
   background-color: #FAF1E6;
   font-family: 'Abel',sans-serif;
 }
+p {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
 hr {
   border-color: white;
   border-style: none;
@@ -28,7 +32,8 @@ footer {
   position: fixed;
   left: 0;
   bottom: 0;
-  width: 100%;
   text-align: center;
+  padding: 10px;
+  width: 100%;
 }
 /*************************CLASS SELECTORS************************/
