@@ -21,6 +21,10 @@ p {
   margin-top: 8px;
   margin-bottom: 8px;
 }
+h4 {
+  margin-block-start: 1px;
+  margin-block-end: 1px;
+}
 hr {
   border-color: white;
   border-style: none;
