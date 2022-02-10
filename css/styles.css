@@ -9,21 +9,15 @@ COLORS:
 TO TRY:
   hover psuedoclass to change style when elements are moused over
 */
-/****************************IMPORTS*****************************/
-@import url(https://fonts.googleapis.com/css?family=Abel);
 
 /**************************TAG SELECTORS*************************/
 body {
   background-color: #FAF1E6;
-  font-family: 'Abel',sans-serif;
+  font-family: sans-serif;
 }
 p {
   margin-top: 8px;
   margin-bottom: 8px;
-}
-h4 {
-  margin-block-start: 1px;
-  margin-block-end: 1px;
 }
 hr {
   border-color: white;
@@ -37,7 +31,23 @@ footer {
   left: 0;
   bottom: 0;
   text-align: center;
-  padding: 10px;
   width: 100%;
 }
 /*************************CLASS SELECTORS************************/
+.topcontainer{
+  text-align: center;
+}
+
+.middlecontainer{
+  text-align: center;
+}
+
+.bottomcontainer{
+  text-align: center;
+}
+
+.decorations{
+  position: fixed;
+  left:0;
+  top:0;
+}
