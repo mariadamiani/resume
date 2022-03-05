@@ -2,48 +2,123 @@
 <html lang="en" dir="ltr">
 
 <head>
+
   <meta charset="utf-8">
   <title>Maria Damiani</title>
-  <link rel="stylesheet" href="css/styles.css" />
   <link rel="icon" href="elephant-ear.ico" />
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/384818422d.js" crossorigin="anonymous"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+
 </head>
 
 <body>
-  <div class="topcontainer">
-    <img class="decorations" src="https://media.giphy.com/media/XxRPV5Gr3OMAzQYLYn/giphy.gif" alt="lights-img" />
-    <img src="images/MariaProfilePic.png" alt="maria profile picture" height=250 />
-    <h1>Maria Damiani</h1>
-    <p><em>Senior Software Engineer at 3M</em></p>
-    <p>Full stack developer with strong software team leadership skills and a passion for writing code that matters.</p>
-    <hr />
-  </div>
 
-  <div class="middlecontainer">
-    <h2>Skills</h2>
-    <hr />
+  <section id="title-section">
+    <div class="container-fluid">
 
-    <h2>Education</h2>
-    <hr />
+      <!-- Title -->
+      <div class="table ">
+        <div class="row">
+          <div class="title-image-column col-lg-5">
+            <img src="images/MariaProfilePic.png" alt="maria profile picture"/>
+          </div>
+          <div class="title-text-column col-lg-7">
+            <h1 class="name-text">Maria Damiani</h1>
+            <p class="tagline-text">
+              Full stack developer with strong software team leadership skills. </br>
+              Passionate about writing code that matters, and having fun doing it.
+            </p>
+          </div>
+        </div>
+      </div>
 
-    <h2>Experience</h2>
-    <h4>3M - Senior Digital Shop Floor (DSF) Software Engineer</h4>
-    <p>April 2015 - Current</p>
-    <h4>3M - Process Information & Control Solutions (PI&CS) Intern</h4>
-    <p>May 2014 - August 2014</p>
-    <hr />
+    </div>
+  </section>
 
-    <!--
-      <a href="hobbies.html">Hobbies</a>
-      <br />
-      <a href="contact.html">Contact Me</a>
-      <br />
-    -->
-  </div>
+  <section id="skills-experience-section">
 
-  <div class="bottomcontainer">
-    <img src="elephant-ear.ico" alt="elephant-ear" />
-    <a href="https://www.flaticon.com/free-icons/indoor-plants" title="indoor plants icons">Indoor plants icons created by Freepik - Flaticon</a>
-  </div>
+    <div class="container-fluid">
+
+      <div class="row">
+        <div class="col-md-4">
+            <h2 class="section-heading">Skills</h2>
+            <p>
+              C# & .NET Framework</br>
+              SQL Databases</br>
+              REST APIs</br>
+              HTML/CSS/JS</br>
+              Git</br>
+              Azure DevOps</br>
+              Agile Scrum</br>
+              JIRA</br>
+            </p>
+          <br/>
+          <br/>
+            <h2 class="section-heading">Education</h2>
+            <strong>Michigan Technological University</strong>
+            <p>
+              BS Electrical & Computer Engineering<br/>
+              2015 (GPA: 3.95)
+            </p>
+            <strong>Itasca Community College</strong>
+            <p>
+              AS Engineering<br/>
+              2012 (GPA: 4.0)
+            </p>
+        </div>
+        <div class="col-md-8">
+          <h2 class="section-heading">Experience</h2>
+
+          <div class="row">
+            <div class="col">
+              <strong>Senior Software Engineer</strong><br/>
+              <strong>3M Engineering - Digital Shop Floor (DSF) Team</strong>
+              <p>2017 - Current</p>
+              <ul>
+                <li>Lead developer of a software team responsible for the development, deployment, and support of a software platform used globally in 3M manufacturing plants.</li>
+                <li>Built the team from just one member up to a current size of eight team members.</li>
+                <li>Responsible for vision, strategy, release planning, and design decisions.</li>
+                <li>Define and assign development tasks amongst the team. Perform code reviews for other developers.</li>
+                <li>Manage the Git repository and oversee all branching and merging.</li>
+                <li>Worked with C#, .NET Framework, REST API, SQL databases, and many other technologies.</li>
+                <li>Established highly respected technical support, documentation, and training for end users.</li>
+              </ul>
+              <br/>
+              <strong>Systems Engineer</strong><br/>
+              <strong>3M Engineering - Process Information & Control Solutions (PI&CS) Team</strong>
+              <p>2015 - 2017</p>
+              <ul>
+                <li>Deployed SCADA software systems and configured data collection for 3M manufacturing equipment across multiple plant sites.</li>
+                <li>Basic PLC & HMI Programming for machine integration with upper level systems. Worked mainly with Rockwell Automation products.</li>
+                <li>Team member on capital projects to install or upgrade 3M manufacturing equipment.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <img src="elephant-ear.ico"/>
+  </footer>
 
 </body>
 

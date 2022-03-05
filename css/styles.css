@@ -1,53 +1,52 @@
-/*****************************NOTES******************************/
 /*
 COLORS:
   FAF1E6(blush)
   FDFAF6(light blush)
   E4EFE7(light green)
   064420 (dark green)
-
-TO TRY:
-  hover psuedoclass to change style when elements are moused over
 */
-
-/**************************TAG SELECTORS*************************/
 body {
-  background-color: #FAF1E6;
-  font-family: sans-serif;
-}
-p {
-  margin-top: 8px;
-  margin-bottom: 8px;
-}
-hr {
-  border-color: white;
-  border-style: none;
-  border-top-style: dotted;
-  border-width: 10px;
-  width: 7%;
-}
-footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
-  width: 100%;
+  min-width: 320px;
 }
-/*************************CLASS SELECTORS************************/
-.topcontainer{
-  text-align: center;
+#title-section{
+  background-color: white;
+  color: black;
 }
-
-.middlecontainer{
-  text-align: center;
+.title-image-column{
+  text-align: right;
+  padding: 100px;
 }
-
-.bottomcontainer{
-  text-align: center;
+.title-text-column{
+  padding: 200px 100px 200px 0px;
 }
-
-.decorations{
-  position: fixed;
-  left:0;
-  top:0;
+.name-text{
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: left;
+}
+.tagline-text{
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-align: left;
+}
+@media (max-width: 1028px) {  /*When viewport is <=1028px wide */
+  .title-image-column{
+    text-align: left;
+  }
+  .title-text-column{
+    padding: 10px 100px;
+  }
+}
+#skills-experience-section{
+  background-color: #E4EFE7;
+  padding: 7% 15%;
+  text-align: left;
+}
+.section-heading{
+  font-weight: 700;
+}
+#footer {
+  padding: 10px 0px;
 }
