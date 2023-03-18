@@ -17,74 +17,71 @@ h6 {
 }
 
 p {
+    font-size: 16px;
     margin: 0;
 }
 
-.toolbar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 60px;
+.row {
     display: flex;
-    align-items: center;
-    background-color: #1976d2;
-    color: white;
-    font-weight: 600;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+  
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: auto;
+    flex: 1;
 }
 
-.toolbar img {
-    margin: 0 16px;
+.main {
+    position: relative;
 }
 
 .content {
     display: flex;
     margin: 65px auto 20px;
-    padding: 0 16px;
+    padding: 0 50px;
     max-width: 960px;
     flex-direction: column;
-    align-items: left;
+    align-content: left;
 }
 
-.profile-photo {
-    display: inline;
-    margin: 0 auto;
-    height: 100%;
-    width: auto;
+.section {
+    margin: 30px 0px;
 }
 
 .profile-header {
-    display: grid;
-    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: left;
 }
 
 .profile-header-image {
-    grid-column: 1;
     width: 300px;
     height: 300px;
-    position: relative;
-    overflow: hidden;
-    border-radius: 50%;
+    order: 1;
+    margin: auto 50px auto 0px;
+    flex: 0 0 300px;
 }
 
 .profile-header-text {
-    grid-column: 2;
-    margin: auto 50px;
+    flex-grow: 1;
+    order: 2;
+    margin: auto 30px auto 0px;
+    min-width: 350px;
 }
 
 .big-title {
-    font-family: "Sono";
+    font-family: "Roboto";
     font-size: 50px;
 }
 
 footer {
-    margin-top: 8px;
+    margin-top: 200px;
     display: flex;
     align-items: center;
     line-height: 20px;
-}
-
-footer a {
-    display: flex;
-    align-items: center;
 }
